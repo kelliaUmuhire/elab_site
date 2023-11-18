@@ -177,7 +177,7 @@ export default function App() {
         </div>
       </div>
       {/* A Word */}
-      <div className="min-h-[80vh] flex flex-col items-center justify-center px-14 bg-cover bg-center closing">
+      <div className="min-h-[90vh] flex flex-col items-center justify-center px-14 bg-cover bg-center closing">
         <div className="font-light lg:w-[60%] w-full text-center text-xl relative ">
           <div className="absolute top-0 -left-1 text-teal-500">&#34;</div>
           E-Lab was a great opportunity for us to collaborate, challenge
