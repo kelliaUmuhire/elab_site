@@ -35,30 +35,30 @@ export default function App() {
               Hi there! We&#39;re,
             </div>
             <div className="uppercase tracking-wider text-5xl font-bold lg:mt-3 mt-10">
-              the Alchemists
+              the Alchemists 👨‍🔬
             </div>
           </div>
-          <div className="flex flex-col space-y-6 lg:w-1/2 w-full relative lg:mt-0 mt-14">
+          <div className="flex flex-col space-y-6 lg:w-1/2 w-full relative lg:mt-0 mt-14 lg:pr-10">
             <div
-              className="border-green lg:w-[25%] w-[50%] aspect-square lg:absolute relative lg:top-[30%] left-[25%] bg-contain bg-center"
+              className="border-green lg:w-[30%] w-[50%] aspect-square lg:absolute relative lg:top-[30%] left-[7%] bg-contain bg-center"
               style={{ backgroundImage: `url(/Musa.jpeg)` }}
             ></div>
             <div className="flex space-x-6 justify-end">
               <div
-                className="border-green lg:w-[25%] w-[50%] aspect-square bg-contain bg-center"
+                className="border-green lg:w-[30%] w-[50%] aspect-square bg-contain bg-center"
                 style={{ backgroundImage: `url(/Ratifa.jpeg)` }}
               ></div>
               <div
-                className="border-green lg:w-[25%] w-[50%] aspect-square bg-contain bg-center"
+                className="border-green lg:w-[30%] w-[50%] aspect-square bg-contain bg-center"
                 style={{ backgroundImage: `url(/Sheryl.jpeg)` }}
               ></div>
             </div>
             <div className="flex space-x-6 justify-end">
               <div
-                className="border-green lg:w-[25%] w-[50%] aspect-square bg-contain bg-center"
+                className="border-green lg:w-[30%] w-[50%] aspect-square bg-contain bg-center"
                 style={{ backgroundImage: `url(/Kellia.jpg)` }}
               ></div>
-              <div className="border-green lg:w-[25%] w-[50%] aspect-square bg-contain bg-center"></div>
+              <div className="border-green lg:w-[30%] w-[50%] aspect-square bg-contain bg-center"></div>
             </div>
           </div>
         </div>
