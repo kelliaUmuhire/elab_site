@@ -82,8 +82,8 @@ export default function App() {
                 className="bg-cover bg-center w-full h-[50vh]"
               ></div>
               <div className="mt-2 text-lg">{item.name}</div>
-              <div className="mt-0.5 text-gray-200 font-light text-sm">
-                Faculty: {item.faculty}
+              <div className="mt-0.5 text-gray-300 font-light text-sm">
+                {item.email}
               </div>
               <div className="text-sm mt-2 font-light text-gray-200">
                 {item.intro}

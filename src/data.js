@@ -78,35 +78,35 @@ export const CHALLENGES = [
 export const TEAM = [
   {
     name: "Michael Musembi Musa",
-    faculty: "BLE",
+    email: "m.musembi@alustudent.com",
     picture: "/Musa.jpeg",
     intro:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quis nisl id commodo.",
   },
   {
     name: "Ratifa UWERA",
-    faculty: "BLE",
+    email: "r.uwera2@alustudent.com",
     picture: "/Ratifa.jpeg",
     intro:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quis nisl id commodo.",
   },
   {
     name: "Sheryl Atieno Otieno",
-    faculty: "BLE",
+    email: "s.otieno@alustudent.com",
     picture: "/Sheryl.jpeg",
     intro:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quis nisl id commodo.",
   },
   {
     name: "Kellia UMUHIRE",
-    faculty: "BLE",
+    email: "k.umuhire@alustudent.com",
     picture: "/Kellia.jpg",
     intro:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quis nisl id commodo.",
   },
   {
     name: "Angelo SHEMA",
-    faculty: "BLE",
+    email: "a.shema1@alustudent.com",
     picture: "https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg",
     intro:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quis nisl id commodo.",
