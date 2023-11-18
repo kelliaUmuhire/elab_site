@@ -105,7 +105,7 @@ export const TEAM = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis quis nisl id commodo.",
   },
   {
-    name: "John Doe",
+    name: "Angelo SHEMA",
     faculty: "BLE",
     picture: "https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg",
     intro:
