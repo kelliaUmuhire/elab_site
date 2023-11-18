@@ -8,19 +8,19 @@ export default function App() {
     <div className="text-white relative">
       <div className="relative min-h-[100vh]">
         {/* Nav */}
-        <div className="flex md:flex-row flex-col justify-between md:px-14 px-10 py-8">
+        <div className="flex lg:flex-row flex-col justify-between lg:px-14 px-10 py-8">
           <div className="font-logo text-3xl text-teal-500 uppercase">
             Alchemists
           </div>
-          <div className="flex md:space-x-8 space-x-5 text-base items-center pt-4 md:pt-0">
+          <div className="flex lg:space-x-8 space-x-5 text-base items-center pt-4 lg:pt-0">
             <a href="#team">Team</a>
             <a href="#mission">Mission</a>
             <a href="#challenges">Challenges</a>
             <a href="/">Our Solution</a>
-            <hr className="border-t border-t-white w-7 rotate-90 md:block hidden" />
+            <hr className="border-t border-t-white w-7 rotate-90 lg:block hidden" />
             <a
               href="https://instagram.com/the___alchemists"
-              className="md:relative absolute md:top-0 top-10 right-10 md:right-0"
+              className="lg:relative absolute lg:top-0 top-10 right-10 lg:right-0"
               target="_blank"
               rel="noreferrer"
             >
@@ -29,40 +29,40 @@ export default function App() {
           </div>
         </div>
         {/* Intro */}
-        <div className="flex md:flex-row flex-col flex-wrap justify-between px-14 mt-20 items-center">
-          <div className="md:w-1/2 w-full text-center md:text-left">
+        <div className="flex lg:flex-row flex-col flex-wrap justify-between px-14 mt-20 items-center">
+          <div className="lg:w-1/2 w-full text-center lg:text-left">
             <div className="text-2xl text-gray-300 tracking-wide">
               Hi there! We&#39;re,
             </div>
-            <div className="uppercase tracking-wider text-5xl font-bold md:mt-3 mt-10">
+            <div className="uppercase tracking-wider text-5xl font-bold lg:mt-3 mt-10">
               the Alchemists
             </div>
           </div>
-          <div className="flex flex-col space-y-6 md:w-1/2 w-full relative md:mt-0 mt-14">
+          <div className="flex flex-col space-y-6 lg:w-1/2 w-full relative lg:mt-0 mt-14">
             <div
-              className="border-green md:w-[25%] w-[50%] aspect-square md:absolute relative md:top-[30%] left-[25%] bg-contain bg-center"
+              className="border-green lg:w-[25%] w-[50%] aspect-square lg:absolute relative lg:top-[30%] left-[25%] bg-contain bg-center"
               style={{ backgroundImage: `url(/Musa.jpeg)` }}
             ></div>
             <div className="flex space-x-6 justify-end">
               <div
-                className="border-green md:w-[25%] w-[50%] aspect-square bg-contain bg-center"
+                className="border-green lg:w-[25%] w-[50%] aspect-square bg-contain bg-center"
                 style={{ backgroundImage: `url(/Ratifa.jpeg)` }}
               ></div>
               <div
-                className="border-green md:w-[25%] w-[50%] aspect-square bg-contain bg-center"
+                className="border-green lg:w-[25%] w-[50%] aspect-square bg-contain bg-center"
                 style={{ backgroundImage: `url(/Sheryl.jpeg)` }}
               ></div>
             </div>
             <div className="flex space-x-6 justify-end">
               <div
-                className="border-green md:w-[25%] w-[50%] aspect-square bg-contain bg-center"
+                className="border-green lg:w-[25%] w-[50%] aspect-square bg-contain bg-center"
                 style={{ backgroundImage: `url(/Kellia.jpg)` }}
               ></div>
-              <div className="border-green md:w-[25%] w-[50%] aspect-square bg-contain bg-center"></div>
+              <div className="border-green lg:w-[25%] w-[50%] aspect-square bg-contain bg-center"></div>
             </div>
           </div>
         </div>
-        <div className="absolute top-0 w-full opacity-[0.07] md:h-[100vh] h-full overflow-hidden -z-10">
+        <div className="absolute top-0 w-full opacity-[0.07] lg:h-[100vh] h-full overflow-hidden -z-10">
           <img src="/pattern.svg" className="w-[100%]" />
         </div>
       </div>
@@ -74,9 +74,9 @@ export default function App() {
         <div className="text-4xl tracking-widest text-teal-500">
           Meet The Team
         </div>
-        <div className="flex flex-wrap items-center justify-center mt-20 md:space-x-20">
+        <div className="flex flex-wrap items-center justify-center mt-20 lg:space-x-20">
           {TEAM.map((item, i) => (
-            <div key={i} className="md:w-[30%] w-full my-8">
+            <div key={i} className="lg:w-[30%] w-full my-8">
               <div
                 style={{ backgroundImage: `url("${item.picture}")` }}
                 className="bg-cover bg-center w-full h-[50vh]"
@@ -100,7 +100,7 @@ export default function App() {
         <div className="text-4xl tracking-widest text-teal-500">
           Our Mission
         </div>
-        <div className="mt-14 font-light md:w-[60%] w-[100%] text-center text-lg">
+        <div className="mt-14 font-light lg:w-[60%] w-[100%] text-center text-lg">
           Our mission is to improve Rwanda&#39;s agriculture sector by enhancing
           the use of innovative technological infrastructure in order to
           increase the quality and quantity of Rwanda&#39;s agricultural output.
@@ -108,28 +108,28 @@ export default function App() {
       </div>
       {/* Challenges */}
       <div className="min-h-[80vh] relative" id="challenges">
-        <div className="py-24 md:px-14 px-10 relative z-5">
+        <div className="py-24 lg:px-14 px-10 relative z-5">
           <div className="text-4xl tracking-widest text-teal-500">
             Challenges
           </div>
-          <div className="md:flex justify-between mt-14">
-            <div className="flex md:flex-col flex-row md:space-y-6 md:w-[35%] w-full justify-between">
+          <div className="lg:flex justify-between mt-14">
+            <div className="flex lg:flex-col flex-row lg:space-y-6 lg:w-[35%] w-full justify-between">
               {CHALLENGES.map((item, i) => (
                 <div
                   key={i}
-                  className={`tblack border-2 border-gray-800 rounded-lg flex md:py-6 py-4 md:px-10 px-4 cursor-pointer ${
+                  className={`tblack border-2 border-gray-800 rounded-lg flex lg:py-6 py-4 lg:px-10 px-4 cursor-pointer ${
                     active === i && "border-teal-700"
                   }`}
                   onClick={() => (setChallenge(item.content), setActive(i))}
                 >
                   <div
-                    className={`font-bold md:text-6xl text-3xl w-[20%] text-gray-500 ${
+                    className={`font-bold lg:text-6xl text-3xl w-[20%] text-gray-500 ${
                       active === i && "text-teal-500"
                     }`}
                   >
                     {i + 1}
                   </div>
-                  <div className="w-[80%] md:block hidden">
+                  <div className="w-[80%] lg:block hidden">
                     <div className="text-lg font-semibold capitalize">
                       {item.name}
                     </div>
@@ -141,14 +141,14 @@ export default function App() {
               ))}
             </div>
             {challenge && (
-              <div className="md:w-[55%] w-full border-black tblack rounded-lg p-8 h-fit md:mt-0 mt-10">
+              <div className="lg:w-[55%] w-full border-black tblack rounded-lg p-8 h-fit lg:mt-0 mt-10">
                 {challenge.introType === "video" ? (
                   <video
                     src={challenge.intro}
                     controls
                     autoPlay
                     muted
-                    className="md:h-auto min-h-[18vh]"
+                    className="lg:h-auto min-h-[18vh]"
                   ></video>
                 ) : (
                   <div
@@ -178,7 +178,7 @@ export default function App() {
       </div>
       {/* A Word */}
       <div className="min-h-[80vh] flex flex-col items-center justify-center px-14 bg-cover bg-center closing">
-        <div className="font-light md:w-[60%] w-full text-center text-xl relative ">
+        <div className="font-light lg:w-[60%] w-full text-center text-xl relative ">
           <div className="absolute top-0 -left-1 text-teal-500">&#34;</div>
           E-Lab was a great opportunity for us to collaborate, challenge
           ourselves, and learn new things. We&#39;re incredibly grateful for the
