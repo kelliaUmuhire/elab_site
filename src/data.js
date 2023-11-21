@@ -71,7 +71,7 @@ export const CHALLENGES = [
       intro:
         "https://img.freepik.com/premium-photo/stand-up-meeting-discussion-office-generative-ai-illustration_145713-1214.jpg",
       details:
-        "In the current digital word, a digital presention of our work is very crucial. On this website, we tell our story, and we hope you're enjoy it.",
+        "In the current digital world, a digital presention of our work is very crucial. On this website, we tell our story, and we hope you're enjoy it.",
       pictures: [],
     },
   },
