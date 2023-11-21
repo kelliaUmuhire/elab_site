@@ -21,7 +21,13 @@ export default function App() {
             <a href="#team">Team</a>
             <a href="#mission">Mission</a>
             <a href="#challenges">Challenges</a>
-            <a href="/">Our Solution</a>
+            <a
+              href="https://www.figma.com/file/qaGp3LOYtxqkEHB59RMSDa/E-Lab?type=design&node-id=42%3A828&mode=design&t=vCwmgn9WrgQpLblS-1"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Our Solution
+            </a>
             <hr className="border-t border-t-white w-7 rotate-90 lg:block hidden" />
             <a
               href="https://instagram.com/the___alchemists"
