@@ -24,7 +24,7 @@ body {
 }
 
 .closing {
-  background-image: url("/team.jpg");
-  background-color: rgba(0, 0, 0, 0.395);
+  background-image: url("/team2.jpg");
+  background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
 }

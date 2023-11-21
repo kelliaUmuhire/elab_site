@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { CHALLENGES, TEAM } from "./data";
 
 export default function App() {
   const [challenge, setChallenge] = useState();
   const [active, setActive] = useState();
+
+  useEffect(() => {
+    setActive(0);
+    setChallenge(CHALLENGES[0].content);
+  }, []);
   return (
     <div className="text-white relative">
       <div className="relative min-h-[100vh]">
@@ -41,16 +46,16 @@ export default function App() {
           <div className="flex flex-col space-y-6 lg:w-1/2 w-full relative lg:mt-0 mt-14 lg:pr-10">
             <div
               className="border-green lg:w-[30%] w-[50%] aspect-square lg:absolute relative lg:top-[30%] left-[7%] bg-contain bg-center"
-              style={{ backgroundImage: `url(/Musa.jpeg)` }}
+              style={{ backgroundImage: `url(/Musa.jpg)` }}
             ></div>
             <div className="flex space-x-6 justify-end">
               <div
                 className="border-green lg:w-[30%] w-[50%] aspect-square bg-contain bg-center"
-                style={{ backgroundImage: `url(/Ratifa.jpeg)` }}
+                style={{ backgroundImage: `url(/Ratifa.jpg)` }}
               ></div>
               <div
                 className="border-green lg:w-[30%] w-[50%] aspect-square bg-contain bg-center"
-                style={{ backgroundImage: `url(/Sheryl.jpeg)` }}
+                style={{ backgroundImage: `url(/Sheryl.jpg)` }}
               ></div>
             </div>
             <div className="flex space-x-6 justify-end">
@@ -58,7 +63,10 @@ export default function App() {
                 className="border-green lg:w-[30%] w-[50%] aspect-square bg-contain bg-center"
                 style={{ backgroundImage: `url(/Kellia.jpg)` }}
               ></div>
-              <div className="border-green lg:w-[30%] w-[50%] aspect-square bg-contain bg-center"></div>
+              <div
+                className="border-green lg:w-[30%] w-[50%] aspect-square bg-contain bg-center"
+                style={{ backgroundImage: `url(/Angelo.jpeg)` }}
+              ></div>
             </div>
           </div>
         </div>
@@ -66,35 +74,10 @@ export default function App() {
           <img src="/pattern.svg" className="w-[100%]" />
         </div>
       </div>
-      {/* Team */}
-      <div
-        className="min-h-[80vh] flex flex-col items-center justify-center px-14 py-24"
-        id="team"
-      >
-        <div className="text-4xl tracking-widest text-teal-500">
-          Meet The Team
-        </div>
-        <div className="flex flex-wrap items-center justify-center mt-20 lg:space-x-20">
-          {TEAM.map((item, i) => (
-            <div key={i} className="lg:w-[30%] w-full my-8">
-              <div
-                style={{ backgroundImage: `url("${item.picture}")` }}
-                className="bg-cover bg-center w-full h-[50vh]"
-              ></div>
-              <div className="mt-2 text-lg">{item.name}</div>
-              <div className="mt-0.5 text-gray-300 font-light text-sm">
-                {item.email}
-              </div>
-              <div className="text-sm mt-2 font-light text-gray-200">
-                {item.intro}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
       {/* Mission */}
       <div
-        className="min-h-[80vh] flex flex-col items-center justify-center px-14 tblack"
+        className="min-h-[90vh] flex flex-col items-center justify-center px-14 bg-cover bg-center closing"
+        style={{ backgroundImage: "url(/team.jpg)" }}
         id="mission"
       >
         <div className="text-4xl tracking-widest text-teal-500">
@@ -104,6 +87,34 @@ export default function App() {
           Our mission is to improve Rwanda&#39;s agriculture sector by enhancing
           the use of innovative technological infrastructure in order to
           increase the quality and quantity of Rwanda&#39;s agricultural output.
+        </div>
+      </div>
+      <div className="min-h-[80vh] flex flew-wrap items-center justify-center px-14 tblack w-full">
+        <div className="lg:w-1/2 w-full lg:px-10 px-8">
+          <div className="text-2xl tracking-wide text-teal-500">
+            The Problem
+          </div>
+          <div className="mt-8 font-light lg:w-[90%] w-[100%] text-justify text-base">
+            Rwanda is a country of few natural resources, and the economy is
+            based mostly on subsistence agriculture by local farmers using
+            simple tools. Because Rwanda imports more products than it exports,
+            using modern and sustainable technology can increase the
+            productivity of the agriculture sector hence reducing the reliance
+            of Rwanda on foreign imports.
+          </div>
+        </div>
+        <div className="lg:w-1/2 w-full lg:pl-20 lg:pr-8 px-8 border-l border-l-gray-600">
+          <div className="text-2xl tracking-wide text-teal-500">
+            The Solution
+          </div>
+          <div className="mt-8 font-light lg:w-[90%] w-[100%] text-justify text-base">
+            We aim to create a mobile application that links farmers to
+            consumers of their farm produce alongside connecting them with
+            organizations and individual that offer agricultural technological
+            infrastructure such as tractors, combine harvesters for hire. This
+            will enable the farmers get easy access to the market therefore able
+            to generate more income.
+          </div>
         </div>
       </div>
       {/* Challenges */}
@@ -153,20 +164,22 @@ export default function App() {
                 ) : (
                   <div
                     style={{ backgroundImage: `url("${challenge.intro}")` }}
-                    className="bg-cover bg-center w-full min-h-[50vh]"
+                    className="bg-cover bg-center w-full min-h-[60vh] rounded"
                   ></div>
                 )}
-                <div className="flex space-x-3 mt-6 items-center">
-                  <img src="/link.svg" className="w-5" />
-                  <a
-                    className="text-teal-500"
-                    href={challenge.link}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {challenge.linkTo}
-                  </a>
-                </div>
+                {challenge.link && (
+                  <div className="flex space-x-3 mt-6 items-center">
+                    <img src="/link.svg" className="w-5" />
+                    <a
+                      className="text-teal-500"
+                      href={challenge.link}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {challenge.linkTo}
+                    </a>
+                  </div>
+                )}
                 <div className="mt-6">{challenge.details}</div>
               </div>
             )}
@@ -174,6 +187,32 @@ export default function App() {
         </div>
         <div className="absolute top-0 w-full opacity-5 h-[100vh] overflow-hidden -z-30">
           <img src="/pattern.svg" className="w-[100%]" />
+        </div>
+      </div>
+      {/* Team */}
+      <div
+        className="min-h-[80vh] flex flex-col items-center justify-center px-14 py-24"
+        id="team"
+      >
+        <div className="text-4xl tracking-widest text-teal-500">
+          Meet The Team
+        </div>
+        <div className="flex flex-wrap items-center justify-center mt-20 lg:space-x-12">
+          {TEAM.map((item, i) => (
+            <div key={i} className="lg:w-[25%] w-full my-8">
+              <div
+                style={{ backgroundImage: `url("${item.picture}")` }}
+                className="bg-cover bg-center w-full h-[50vh]"
+              ></div>
+              <div className="mt-2 text-base font-semibold">{item.name}</div>
+              <div className="mt-0.5 text-gray-300 font-light text-sm">
+                {item.email}
+              </div>
+              {/* <div className="text-sm mt-2 font-light text-gray-200">
+                {item.intro}
+              </div> */}
+            </div>
+          ))}
         </div>
       </div>
       {/* A Word */}
